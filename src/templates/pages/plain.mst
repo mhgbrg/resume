@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+
+<body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Resume</title>
+    <style>
+      @import 'reset-css/reset.css';
+
+      @media print {
+        @page {
+          margin: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    {{> resume}}
+  </body>
+</body>

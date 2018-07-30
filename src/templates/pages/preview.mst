@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+
+<body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Resume</title>
+    <style>
+      @import 'reset-css/reset.css';
+
+      body {
+        background-color: #e3e3e3;
+        padding: 20px;
+      }
+
+      .page {
+        width: 210mm;
+        height: 297mm;
+        box-shadow: 0 0 30px #ADADAD;
+        margin: 0 auto;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      {{> resume}}
+    </div>
+    <script src="/reload/lib/reload.js"></script>
+  </body>
+</body>

@@ -1,0 +1,21 @@
+{
+  "name": "resume",
+  "scripts": {
+    "start": "PORT=3000 supervisor --watch ./src/server.js -- ./src/server.js ./resume_content.yaml",
+    "browser-sync": "browser-sync start --proxy 'localhost:3000' --files './src/templates/**/*,resume_content.yaml' --port 3001 --startPath '/preview'",
+    "dev": "npm run start & npm run browser-sync",
+    "save": "node ./src/generatePdf.js 3000 saved/resume_`date +%Y%m%d`.pdf && open saved/resume_`date +%Y%m%d`.pdf",
+    "fmt": "prettier --single-quote --trailing-comma=es5 --no-semi --write \"./src/**/*.js\""
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.2.0",
+    "browser-sync": "^2.24.6",
+    "express": "^4.16.3",
+    "js-yaml": "^3.12.0",
+    "mustache": "^2.3.0",
+    "prettier": "^1.14.0",
+    "puppeteer": "^1.6.1",
+    "reset-css": "^4.0.1",
+    "supervisor": "^0.12.0"
+  }
+}

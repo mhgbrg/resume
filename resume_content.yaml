@@ -1,0 +1,186 @@
+name: Mats Högberg
+phone: (+46) 73-030 84 25
+email: mats@hgbrg.se
+github: mhgbrg
+linkedin: matshoegberg
+content:
+  left_column:
+    - title: About me
+      entries:
+        - is_text: true
+          content: "I’m a student with a passion for technology, startups and programming. In 2017 I finished my bachelor’s degree in Software Engineering before taking a year off to do internships in the US. This fall I am starting a 2-year master’s program in Computer Science, and I’m currently looking for a company where I can do my last internship before graduating in 2020."
+    - title: Education
+      entries:
+        - is_standard: true
+          title: Chalmers University of Technology
+          subtitle: MSc. Computer Science – algorithms, languages and logic
+          location: Gothenburg, Sweden
+          date: 2018.09 – 2020.06
+          bullet_points:
+            - "Including a semester abroad at City University of Hong Kong"
+        - is_standard: true
+          title: Chalmers University of Technology
+          subtitle: BSc. Software Engineering
+          location: Gothenburg, Sweden
+          date: 2014.09 – 2017.06
+          bullet_points:
+            - "GPA: <b>4.91/5.00</b>"
+            - "BA thesis: Surview - Improving the survey industry by using chatbot technology"
+            - "Organizer, NollKIT 2015: Organized the reception of all new students to the Software Engineering program at Chalmers"
+            - "Participated in a leadership course by Gothenburg Management Institute in spring 2015"
+        - is_standard: true
+          title: Jämtlands Gymnasium Wargentin
+          subtitle: High School
+          location: Östersund, Sweden
+          date: 2009.09 – 2012.06
+          bullet_points:
+            - "Technical program with a focus on computer technology"
+            - "Learned the basics of C++, web development, networks and operating systems"
+    - title: Programming skills
+      entries:
+        - is_simple_list: true
+          content:
+            - "Languages I've worked with a lot: <b>Java, JavaScript, Python, SQL</b>"
+            - "Languages I'm familiar with: TypeScript, Haskell, Erlang"
+            - "Various frameworks and technologies I've worked with: Node.js, Express, React, Vue.js, Angular 2, Redshift, MongoDB, AWS, Heroku, Tableau"
+    - title: Awards
+      entries:
+        - is_standard: true
+          title: Gothenburg Startup Hack 2016
+          subtitle: Jury's Choice
+          location: Gothenburg, Sweden
+          date: 2016.05
+          bullet_points:
+            - "See <em>Surview</em>"
+        - is_standard: true
+          title: Junction 2015
+          subtitle: Top 3 Best Hacks by Bloomberg
+          location: Helsinki, Finland
+          date: 2015.11
+          bullet_points:
+            - "Built a service for crowdsourcing technical support jobs, using natural language processing and IP telephony services"
+            - "Structured and wrote the majority of the backend code (Node.js)"
+        - is_standard: true
+          title: Gothenburg Startup Hack 2015
+          subtitle: 3rd place in People's Choice
+          location: Gothenburg, Sweden
+          date: 2015.05
+          bullet_points:
+            - "Developed a web application that allowed users to view news articles and social media posts plotted on a map for any location in the world"
+            - "Structured and wrote the majority of the backend code (Node.js)"
+    - title: Misc. software projects
+      entries:
+        - is_standard: true
+          title: ElectriCity Innovation Challenge
+          subtitle:
+          location:
+          date: 2015.09 – 2015.10
+          bullet_points:
+            - "Developed an Android app that let commuters share information with each other in real time regarding their situation on public transport"
+            - "Worked a lot on the app logic, with focus on achieving a good layered architecture in the code"
+            - "Functioned as Scrum Master for the team"
+        - is_standard: true
+          title: Mailbowser
+          subtitle:
+          location:
+          date: 2015.04 – 2015.06
+          bullet_points:
+            - "Developed a fully functional, multi threaded email client with Markdown support in Java as part of a project course at Chalmers"
+            - "Worked mainly on the domain model, the MVC logic and the code for sending and receiving emails"
+  right_column:
+    - title: Work experience
+      entries:
+        - is_standard: true
+          title: Yelp
+          subtitle: Software Engineering Intern, Messaging/Local Services
+          location: San Francisco, CA
+          date: 2017.09 – 2018.05
+          bullet_points:
+            - "Was the lead backend developer for a redesign of the inbox view for mobile users"
+            - "Developed and deployed Python services used by thousands of people every day"
+            - "Worked on a new single page web messenger built with React and Redux"
+            - "Wrote complex MySQL and Redshift queries for in-depth data analysis"
+            - "Built an extensive Tableau dashboard for tracking key product metrics, and held Tableau workshops to pass my knowledge on to the rest of the engineering team"
+        - is_standard: true
+          title: Google
+          subtitle: Software Engineering Intern, CorpEng
+          location: New York, NY
+          date: 2017.06 – 2017.09
+          bullet_points:
+            - "Extended an internal single-page web application with new features"
+            - "Worked with both frontend (Angular 2, TypeScript) and backend (Java, Protocol Buffers)"
+            - "Collaborated closely with product managers and designers"
+            - "Submitted 83 change lists over a period of 12 weeks (~1.4/day)"
+        - is_standard: true
+          title: Surview
+          subtitle: Co-founder
+          location: Gothenburg, Sweden
+          date: 2016.05 – 2018.02
+          bullet_points:
+            - "Developed a service for conducting surveys over SMS using chatbot technology"
+            - "Involved in all aspects of the business, including formulating a viable business plan, meeting with potential customers, identifying needed features and developing the product"
+            - "Built the backend for handling surveys with Node.js and MongoDB, hosted on AWS and deployed using Gitlab CI"
+            - "Won the Jury’s Choice award at Gothenburg Startup Hack 2016"
+            - "Incorporated the startup in my BA thesis"
+            - "Got acquired by Flourishing Enterprises (a subsidiary of Quicksearch) in February 2018"
+        - is_standard: true
+          title: Ericsson
+          subtitle: Summer intern
+          location: Gothenburg, Sweden
+          date: 2016.06 – 2016.08
+          bullet_points:
+            - "Extended an internal Java test framework with new functionality, including uploading test results to a separate system in realtime and adding the option to specify hardware requirements for individual tests. This sped up releases, made it easier to find failing tests and reduced the number of false negatives in the test suite"
+            - "Developed a framework for creating live updating dashboards using Node.js, Vue.js, Socket.IO and MongoDB, the main focus being on making it as easy as possible for other developers to create their own custom widgets. This framework is now used internally at Ericsson by many teams"
+        - is_standard: true
+          title: Dinnify
+          subtitle: Full-stack developer
+          location: Gothenburg, Sweden
+          date: 2015.04 – 2015.10
+          bullet_points:
+            - "Worked on a service that allowed restaurants to receive reservations and orders digitally from customers using a mobile app"
+            - "Led the development of a lunch coupon feature"
+            - "Worked with PHP, JQuery and PostgreSQL"
+        - is_standard: true
+          title: Loxysoft
+          subtitle: Service Center Operator
+          location: Östersund, Sweden
+          date: 2012.10 – 2014.06
+          bullet_points:
+            - "System support for the biggest provider of call center applications in Scandinavia"
+            - "Excelled as an employee by completing the most support cases out of all the operators in 2013"
+            - "Created custom scheduled reports using MS SQL and Excel"
+            - "Scripted the applications for specific customer needs using VBScript"
+        - is_standard: true
+          title: H1 Communication
+          subtitle: Tech Support
+          location: Östersund, Sweden
+          date: 2012.04 – 2012.10
+          bullet_points:
+            - "Tech support for BankID and various IT systems used by the public health care sector in Sweden"
+      # - title: Solo projects
+      #   entries:
+      #     - is_standard: true
+      #       title: hn-daily.com
+      #       subtitle:
+      #       location:
+      #       date:
+      #       bullet_points:
+      #         - "Website with daily digests of Hacker News (news.ycombinator.com)"
+      #         - "Built as a static website, hosted on AWS with NGINX, cached using Cloudflare, using Loggly for logs"
+      #         - "The purpose of this projects has been to learn more about devops and modern web hosting"
+      #     - is_standard: true
+      #       title: URL shortener
+      #       subtitle:
+      #       location:
+      #       date:
+      #       bullet_points:
+      #         - "Developing a URL shortener in order to learn more about TypeScript, Angular 2 and modern Java web development"
+      #         - "Focus has been on building a maintainable codebase that is as modular and loosely coupled as possible"
+      #     - is_standard: true
+      #       title: blk
+      #       subtitle:
+      #       location:
+      #       date:
+      #       bullet_points:
+      #         - "A simple-to-use terminal utility for blocking distracting websites, written in Bash"
+      #         - "See github.com/mhgbrg/blk"

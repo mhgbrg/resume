@@ -1,0 +1,40 @@
+<h2 class="section-title">{{title}} <span></span></h2>
+{{#entries}}
+  <div class="entry{{#is_text}} text-entry{{/is_text}}{{#is_simple_list}} simple-list-entry{{/is_simple_list}}">
+    {{#is_text}}
+      <p class="description">{{{content}}}</p>
+    {{/is_text}}
+    {{#is_simple_list}}
+      <ul class="description">
+        {{#content}}
+          <li>{{{.}}}</li>
+        {{/content}}
+      </ul>
+    {{/is_simple_list}}
+    {{#is_standard}}
+      <div class="entry-header">
+        {{#subtitle}}
+          <div class="entry-header-row-1">
+            <h3 class="entry-title">{{title}}</h3>
+            <p class="entry-location">{{location}}</p>
+          </div>
+          <div class="entry-header-row-2">
+            <p class="entry-subtitle">{{subtitle}}</p>
+            <p class="entry-date">{{date}}</p>
+          </div>
+        {{/subtitle}}
+        {{^subtitle}}
+          <div class="entry-header-row-1">
+            <h3 class="entry-title">{{title}}</h3>
+            <p class="entry-date">{{date}}</p>
+          </div>
+        {{/subtitle}}
+      </div>
+      <ul class="description">
+        {{#bullet_points}}
+          <li>{{{.}}}</li>
+        {{/bullet_points}}
+      </ul>
+    {{/is_standard}}
+  </div>
+{{/entries}}

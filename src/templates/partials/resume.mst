@@ -1,0 +1,205 @@
+<div class="resume">
+  <style scoped>
+    /* TODO: Import fonts locally */
+    @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
+    @import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i');
+    @import '@fortawesome/fontawesome-free/css/all.css';
+
+    :root {
+      --font: 'Roboto', sans-serif;
+
+      --name-color: #333;
+      --contact-color: #333;
+      --section-title-color: #333;
+      --entry-title-color: #333;
+      --entry-subtitle-color: #5d5d5d;
+      --entry-location-color: #dc3522;
+      --entry-date-color: #333;
+      --text-color: #333;
+
+      --page-padding: 5mm;
+      --gutter-size: 3mm;
+
+      --section-spacing: 2.5mm;
+      --entry-spacing: 2.5mm;
+
+      --list-spacing: 0.3em;
+    }
+
+    b {
+      font-weight: 600;
+    }
+
+    em {
+      font-style: italic;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* --- PAGE --- */
+    .resume {
+      font-family: var(--font);
+      padding: var(--page-padding);
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    /* --- HEADER --- */
+    header {
+      margin-bottom: var(--page-padding);
+    }
+
+    .name {
+      text-align: center;
+      font-weight: 200;
+      font-size: 36pt;
+      margin-bottom: 10px;
+      color: var(--name-color);
+    }
+
+    .contact {
+      text-align: center;
+      font-size: 6.8pt;
+      color: var(--contact-color);
+    }
+
+    .contact > .separator {
+      margin: 0 5px;
+    }
+
+    /* --- COLUMNS --- */
+    .columns {
+      display: flex;
+    }
+
+    .column {
+      flex-basis: 0;
+      flex-grow: 1;
+    }
+
+    .column:first-child {
+      margin-right: calc(var(--gutter-size) / 2);
+    }
+
+    .column:last-child {
+      margin-left: calc(var(--gutter-size) / 2);
+    }
+
+    /* --- SECTION --- */
+    .section-title {
+      font-size: 16pt;
+      font-weight: 700;
+      margin-top: var(--section-spacing);
+      display: flex;
+      align-items: center;
+      color: var(--section-title-color);
+    }
+
+    .section-title:first-child {
+      margin-top: 0;
+    }
+
+    .section-title > span {
+      flex: 1 1 auto;
+      border-top: 1px solid var(--section-title-color);
+      margin-top: 13px;
+      margin-left: 5px;
+    }
+
+    /* --- ENTRY --- */
+    .entry {
+      margin-top: var(--entry-spacing);
+    }
+
+    .text-entry, .simple-list-entry {
+      margin-top: 8px;
+    }
+
+    .entry-header-row-1, .entry-header-row-2 {
+      display: flex;
+    }
+
+    .entry-header-row-2 {
+      margin-top: 3px;
+    }
+
+    .entry-title, .entry-subtitle {
+      flex-grow: 1;
+    }
+
+    .entry-subtitle, .entry-date {
+      align-self: flex-end;
+    }
+
+    .entry-title {
+      font-weight: 600;
+      font-size: 10pt;
+      color: var(--entry-title-color);
+    }
+
+    .entry-subtitle {
+      text-transform: uppercase;
+      color: var(--entry-subtitle-color);
+      font-size: 6pt;
+      align-self: flex-end;
+      font-weight: 500;
+    }
+
+    .entry-location {
+      font-style: italic;
+      font-size: 9pt;
+      color: var(--entry-location-color);
+    }
+
+    .entry-date {
+      font-style: italic;
+      font-size: 8pt;
+      color: var(--entry-date-color);
+    }
+
+    .description {
+      font-size: 9pt;
+      color: var(--text-color);
+      line-height: var(--line-height);
+    }
+
+    ul.description {
+      list-style-type: disc;
+      margin-left: 14px;
+      margin-top: 4px;
+    }
+
+    ul.description > li {
+      margin-bottom: var(--list-spacing);
+    }
+
+    ul.description > li:last-child {
+      margin-bottom: 0;
+    }
+
+  </style>
+
+  <header>
+    <h1 class="name">{{name}}</h1>
+    <div class="contact">
+      <a href="tel:{{phone}}"><i class="fas fa-phone-square"></i> {{phone}}</a><span class="separator">&middot;</span><a href="mailto:{{email}}"><i class="fas fa-envelope-square"></i> {{email}}</a><span class="separator">&middot;</span><a href="https://github.com/{{github}}" target="_blank"><i class="fab fa-github-square"></i> {{github}}</a><span class="separator">&middot;</span><a href="https://linkedin.com/in/{{linkedin}}" target="_blank"><i class="fab fa-linkedin"></i> {{linkedin}}</a>
+    </div>
+  </header>
+  <div class="columns">
+    {{#content}}
+      <div class="column">
+        {{#left_column}}
+          {{> section}}
+        {{/left_column}}
+      </div>
+      <div class="column">
+        {{#right_column}}
+          {{> section}}
+        {{/right_column}}
+      </div>
+    {{/content}}
+  </div>
+</div>
