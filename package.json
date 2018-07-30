@@ -1,21 +1,42 @@
 {
   "name": "resume",
-  "scripts": {
-    "start": "PORT=3000 supervisor --watch ./src/server.js -- ./src/server.js ./resume_content.yaml",
-    "browser-sync": "browser-sync start --proxy 'localhost:3000' --files './src/templates/**/*,resume_content.yaml' --port 3001 --startPath '/preview'",
-    "dev": "npm run start & npm run browser-sync",
-    "save": "node ./src/generatePdf.js 3000 saved/resume_`date +%Y%m%d`.pdf && open saved/resume_`date +%Y%m%d`.pdf",
-    "fmt": "prettier --single-quote --trailing-comma=es5 --no-semi --write \"./src/**/*.js\""
-  },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.2.0",
     "browser-sync": "^2.24.6",
+    "eslint": "^5.2.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
     "express": "^4.16.3",
+    "husky": "^1.0.0-rc.13",
     "js-yaml": "^3.12.0",
+    "lint-staged": "^7.2.0",
     "mustache": "^2.3.0",
     "prettier": "^1.14.0",
     "puppeteer": "^1.6.1",
     "reset-css": "^4.0.1",
     "supervisor": "^0.12.0"
+  },
+  "scripts": {
+    "start": "PORT=3000 supervisor --watch ./src/server.js -- ./src/server.js ./resume_content.yaml",
+    "browser-sync": "browser-sync start --proxy 'localhost:3000' --files './src/templates/**/*,resume_content.yaml' --port 3001 --startPath '/preview'",
+    "dev": "npm run start & npm run browser-sync",
+    "save": "node ./src/generatePdf.js 3000 saved/resume_`date +%Y%m%d`.pdf && open saved/resume_`date +%Y%m%d`.pdf",
+    "fmt": "npm run lint -- --fix",
+    "lint": "eslint ./src/"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint"
+    ]
   }
 }
