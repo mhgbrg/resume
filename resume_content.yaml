@@ -16,8 +16,6 @@ content:
           subtitle: MSc. Computer Science – algorithms, languages and logic
           location: Gothenburg, Sweden
           date: 2018.09 – 2020.06
-          bullet_points:
-            - "Including a semester abroad at City University of Hong Kong"
         - is_standard: true
           title: Chalmers University of Technology
           subtitle: BSc. Software Engineering
@@ -26,7 +24,7 @@ content:
           bullet_points:
             - "GPA: <b>4.91/5.00</b>"
             - "BA thesis: Surview - Improving the survey industry by using chatbot technology"
-            - "Organizer, NollKIT 2015: Organized the reception of all new students to the Software Engineering program at Chalmers"
+            - "Organizer, NollKIT 2015"
             - "Participated in a leadership course by Gothenburg Management Institute in spring 2015"
         - is_standard: true
           title: Jämtlands Gymnasium Wargentin
@@ -42,7 +40,7 @@ content:
           content:
             - "Languages I've worked with a lot: <b>Java, JavaScript, Python, SQL</b>"
             - "Languages I'm familiar with: TypeScript, Haskell, Erlang"
-            - "Various frameworks and technologies I've worked with: Node.js, Express, React, Vue.js, Angular 2, Redshift, MongoDB, AWS, Heroku, Tableau"
+            - "Frameworks and technologies I've worked with: Node.js, Express, React, Vue.js, Angular 2, Redshift, MongoDB, AWS, Heroku, Tableau"
     - title: Awards
       entries:
         - is_standard: true
@@ -68,7 +66,7 @@ content:
           bullet_points:
             - "Developed a web application that allowed users to view news articles and social media posts plotted on a map for any location in the world"
             - "Structured and wrote the majority of the backend code (Node.js)"
-    - title: Misc. software projects
+    - title: Other software projects
       entries:
         - is_standard: true
           title: ElectriCity Innovation Challenge
@@ -131,15 +129,15 @@ content:
           bullet_points:
             - "Extended an internal Java test framework with new functionality, including uploading test results to a separate system in realtime and adding the option to specify hardware requirements for individual tests. This sped up releases, made it easier to find failing tests and reduced the number of false negatives in the test suite"
             - "Developed a framework for creating live updating dashboards using Node.js, Vue.js, Socket.IO and MongoDB, the main focus being on making it as easy as possible for other developers to create their own custom widgets. This framework is now used internally at Ericsson by many teams"
-        - is_standard: true
-          title: Dinnify
-          subtitle: Full-stack developer
-          location: Gothenburg, Sweden
-          date: 2015.04 – 2015.10
-          bullet_points:
-            - "Worked on a service that allowed restaurants to receive reservations and orders digitally from customers using a mobile app"
-            - "Led the development of a lunch coupon feature"
-            - "Worked with PHP, JQuery and PostgreSQL"
+        # - is_standard: true
+        #   title: Dinnify
+        #   subtitle: Full-stack developer
+        #   location: Gothenburg, Sweden
+        #   date: 2015.04 – 2015.10
+        #   bullet_points:
+        #     - "Worked on a service that allowed restaurants to receive reservations and orders digitally from customers using a mobile app"
+        #     - "Led the development of a lunch coupon feature"
+        #     - "Worked with PHP, JQuery and PostgreSQL"
         - is_standard: true
           title: Loxysoft
           subtitle: Service Center Operator
