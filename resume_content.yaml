@@ -8,7 +8,7 @@ content:
     - title: About me
       entries:
         - is_text: true
-          content: "I’m a student with a passion for technology, startups and programming. In 2017 I finished my bachelor’s degree in Software Engineering before taking a year off to do internships in the US. This fall I am starting a 2-year master’s program in Computer Science, and I’m currently looking for a company where I can do my last internship before graduating in 2020."
+          content: "I'm computer science student at Chalmers University of Technology. During the past few years, in addition to studying, I have worked on a bunch of different projects both by myself and at companies in Sweden, the US and the UK. Right now I'm looking for an exciting company to join full-time after I graduate in June 2020!"
     - title: Education
       entries:
         - is_standard: true
@@ -16,13 +16,15 @@ content:
           subtitle: MSc. Computer Science – algorithms, languages and logic
           location: Gothenburg, Sweden
           date: 2018.09 – 2020.06
+          bullet_points:
+            - "GPA: <b>5.0/5.0</b>"
         - is_standard: true
           title: Chalmers University of Technology
           subtitle: BSc. Software Engineering
           location: Gothenburg, Sweden
           date: 2014.09 – 2017.06
           bullet_points:
-            - "GPA: <b>4.91/5.00</b>"
+            - "GPA: <b>4.9/5.0</b>"
             - "BA thesis: Surview - Improving the survey industry by using chatbot technology"
             - "Organizer, NollKIT 2015"
             - "Participated in a leadership course by Gothenburg Management Institute in spring 2015"
@@ -89,6 +91,25 @@ content:
     - title: Work experience
       entries:
         - is_standard: true
+          title: Palantir
+          subtitle: Forward Deployed Engineer Intern
+          location: London, UK
+          date: 2019.06 - 2019.09
+          bullet_points:
+            - "Integrated Palantir's products with a large company in the UK"
+            - "Worked on services related to physical and cyber security"
+            - "Developed a backend service in Java that powers a critical mobile app used by the employees of said company"
+            - "Wrote PySpark code for transforming large datasets"
+        # - is_standard: true
+        #   title: Swiss Clinic
+        #   subtitle: Full-stack Developer
+        #   location: Gothenburg, Sweden
+        #   date: 2018.09 - 2018.11
+        #   bullet_points:
+        #     - Short-term consultant-style part-time work as a full-stack developer
+        #     - Developed new features for swissclinic.se using microservices written in Node.js and PostgreSQL
+        #     - Set up hosting from scratch using AWS ElasticBeanstalk, RDS and Bitbucket pipelines
+        - is_standard: true
           title: Yelp
           subtitle: Software Engineering Intern, Messaging/Local Services
           location: San Francisco, CA
@@ -120,7 +141,7 @@ content:
             - "Built the backend for handling surveys with Node.js and MongoDB, hosted on AWS and deployed using Gitlab CI"
             - "Won the Jury’s Choice award at Gothenburg Startup Hack 2016"
             - "Incorporated the startup in my BA thesis"
-            - "Got acquired by Flourishing Enterprises (a subsidiary of Quicksearch) in February 2018"
+            - "Got acquired by Flourishing Enterprises"
         - is_standard: true
           title: Ericsson
           subtitle: Summer intern
@@ -148,13 +169,13 @@ content:
             - "Excelled as an employee by completing the most support cases out of all the operators in 2013"
             - "Created custom scheduled reports using MS SQL and Excel"
             - "Scripted the applications for specific customer needs using VBScript"
-        - is_standard: true
-          title: H1 Communication
-          subtitle: Tech Support
-          location: Östersund, Sweden
-          date: 2012.04 – 2012.10
-          bullet_points:
-            - "Tech support for BankID and various IT systems used by the public health care sector in Sweden"
+        # - is_standard: true
+        #   title: H1 Communication
+        #   subtitle: Tech Support
+        #   location: Östersund, Sweden
+        #   date: 2012.04 – 2012.10
+        #   bullet_points:
+        #     - "Tech support for BankID and various IT systems used by the public health care sector in Sweden"
       # - title: Solo projects
       #   entries:
       #     - is_standard: true

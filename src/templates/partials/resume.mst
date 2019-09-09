@@ -21,7 +21,7 @@
       --section-spacing: 2.5mm;
       --entry-spacing: 2.5mm;
 
-      --list-spacing: 0.3em;
+      --list-spacing: 0.5em;
       --line-height: 1.15;
     }
 
@@ -54,7 +54,7 @@
     .name {
       text-align: center;
       font-weight: 200;
-      font-size: 36pt;
+      font-size: 26pt;
       margin-bottom: 10px;
       color: var(--name-color);
     }
